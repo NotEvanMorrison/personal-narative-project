@@ -5,7 +5,8 @@
 
 Images are often used to portray our personal experiences and interests. We also use image filters and effects to change or enhance the mood of an image. When combined into collages and presentations, these images tell a story about who we are and what is important to us. Your goal is to create a personal narrative using The Theater that consists of images of your personal experiences and/or interests, incorporates data related to these experiences and/or interests that can be organized in a 2D array, and uses image filters and effects to change or enhance the mood of your images.
 
-## Requirements
+## Requirements!
+
 
 Use your knowledge of object-oriented programming, two-dimensional (2D) arrays, and algorithms to create your personal narrative collage or animation:
 
@@ -20,7 +21,7 @@ Use your knowledge of object-oriented programming, two-dimensional (2D) arrays, 
 
 Put and image of your UML Diagram here. Upload the image of your UML Diagram to your repository, then use the Markdown syntax to insert your image here. Make sure your image file name is one work, otherwise it might not properly get display on this README.
 
-![Screenshot 2025-02-02 2 08 54 PM](https://github.com/user-attachments/assets/f11bbaa1-6fcb-4638-a39b-d7207d05ef9a)
+[imagepersonal](https://github.com/user-attachments/assets/e1725833-7fb9-48e1-88ae-a5f561ddcef6)
 
 ## Video
 
