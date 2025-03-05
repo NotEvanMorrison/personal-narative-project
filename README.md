@@ -32,7 +32,7 @@ Record a short video of your story to display here on your README. You can do th
 - Upload the thumbnail image to your repo.
 - Use the following markdown
 
-NotEvanMorrison/personal-narative-project/Video Project.mp4
+![Screenshot 2025-02-02 2 08 54 PM](NotEvanMorrison/personal-narative-project/Video Project.mp4)
 
 ## Story Description
 
