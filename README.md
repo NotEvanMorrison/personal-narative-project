@@ -32,8 +32,7 @@ Record a short video of your story to display here on your README. You can do th
 - Upload the thumbnail image to your repo.
 - Use the following markdown
 
-\Video Project.mp4
-
+NotEvanMorrison/personal-narative-project/Video Project.mp4
 
 ## Story Description
 
