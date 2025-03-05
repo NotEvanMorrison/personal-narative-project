@@ -39,63 +39,6 @@ public class ImagePlus extends Image {
     return imagePixels;
   }
 
-  /*
-   * Detects the edges of objects in an image
-   */
-  public void detectEdges(int edgeDistance) {
-    for (int row = 0; row < imagePixels.length; row++) {
-      for (int col = 0; col < imagePixels[0].length - 1; col++) {
-        Pixel leftPixel = imagePixels[row][col];
-        Pixel rightPixel = imagePixels[row][col + 1];
-
-        if (getDistance(leftPixel.getColor(), rightPixel.getColor()) > edgeDistance) {
-          leftPixel.setColor(Color.BLACK);
-        }
-        else {
-          leftPixel.setColor(Color.WHITE);
-        }
-      }
-    }
-  }
-
-  /*
-   * Different approach to detecting edges in an image
-   */
-  public void anotherEdgeDetection(int edgeDistance) {
-    for (int row = 0; row < imagePixels.length - 1; row++) {
-      for (int col = 0; col < imagePixels[0].length - 1; col++) {
-        Pixel currentPixel = imagePixels[row][col];
-        Pixel bottomPixel = imagePixels[row + 1][col];
-        Pixel rightPixel = imagePixels[row][col + 1];
-
-        int currentIntensity = getAverage(currentPixel);
-        int bottomIntensity = getAverage(bottomPixel);
-        int rightIntensity = getAverage(rightPixel);
-
-        int bottomDiff = Math.abs(currentIntensity - bottomIntensity);
-        int rightDiff = Math.abs(currentIntensity - rightIntensity);
-
-        if (bottomDiff > edgeDistance || rightDiff > edgeDistance) {
-          currentPixel.setColor(Color.BLACK);
-        }
-        else {
-          currentPixel.setColor(Color.WHITE);
-        }
-      }
-    }
-  }
-
-  /*
-   * Returns the distance between firstColor and secondColor
-   */
-  public double getDistance(Color firstColor, Color secondColor) {
-    double redDistance = firstColor.getRed() - secondColor.getRed();
-    double greenDistance = firstColor.getGreen() - secondColor.getGreen();
-    double blueDistance = firstColor.getBlue() - secondColor.getBlue();
-    double distance = Math.sqrt(redDistance * redDistance + greenDistance * greenDistance + blueDistance * blueDistance);
-    return distance;
-  }
-
     /*
    * Applies a colorize filter by converting each Pixel to grayscale and applying
    * a color to it based on its grayscale value
